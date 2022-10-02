@@ -1,5 +1,3 @@
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 const { Router } = require("express");
 const { Collage } = require("../models");
 
