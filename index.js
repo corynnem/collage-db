@@ -9,9 +9,15 @@ const { cors } = require("./middlewares");
 
 app.use(Express.json());
 
-app.get("/test", (req, res) => {
+app.get("/test", (_, res) => {
   res.json({
     message: "test endpoint successful!",
+  });
+});
+
+app.get("/", (_, res) => {
+  res.json({
+    message: "Express on Vercel",
   });
 });
 
